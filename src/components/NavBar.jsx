@@ -2,11 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo-row.png";
 import logoWhite from "../assets/logo-row-white.png";
+import { CgSearch } from "react-icons/cg";
 
 const NavBar = ({ isWhite }) => {
   return (
     <div
-      className={`flex justify-between items-center border-b-[1.25px]
+      className={`flex justify-between items-center border-b-[2px]
       ${
         isWhite === true ? "border-white text-white" : "border-black text-black"
       } pb-0  w-[82%] min-h-[80px] mx-auto`}
@@ -19,7 +20,7 @@ const NavBar = ({ isWhite }) => {
         </div>
       </div>
       <div>
-        <ul className="flex space-x-4 justify-self-center tracking-wide">
+        <ul className="flex space-x-6 justify-self-center tracking-wide text-xl">
           <li className="cursor-pointer hover:underline underline-offset-[3px]">
             <Link to="/">HOME</Link>
           </li>
@@ -35,7 +36,12 @@ const NavBar = ({ isWhite }) => {
         </ul>
       </div>
       <div className=" w-1/5">
-        <ul className="flex justify-end space-x-4 tracking-wide">
+        <ul className="flex justify-end space-x-6 tracking-wide text-xl">
+          <li className="mt-[2px] text-2xl pr-[11px]">
+            <button>
+              <CgSearch />
+            </button>
+          </li>
           <li className="cursor-pointer hover:underline underline-offset-[3px]">
             <Link to="/login">LOGIN</Link>
           </li>

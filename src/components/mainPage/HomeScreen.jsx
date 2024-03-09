@@ -11,27 +11,27 @@ const HomeScreen = () => {
       <NavBar isWhite={true} />
       <div className="relative text-5xl h-full w-full flex justify-center items-center text-center flex-col overflow-hidden">
         <img
-          className="absolute rotate-10 top-[21%] mb-2 w-[400px]"
+          className="absolute rotate-10 top-[20%] mb-2 w-[500px]"
           src={bottleImg}
           alt="picture of shampoo bottle"
         />
         <div className="absolute top-[15%] flex flex-col items-end">
           <div>
-            <p className="font-poppins font-[200] text-sm mb-2 tracking-[0.05em]">
+            <p className="font-poppins font-[200] text-xl mb-2 tracking-[0.05em]">
               100% organic
             </p>
-            <p className="font-garamond text-[60px] mb-1">WITHOUT</p>
-            <p className="font-sulfates tracking-[0.05em] text-[58px] ">
+            <p className="font-garamond text-[78px] mb-1">WITHOUT</p>
+            <p className="font-sulfates tracking-[0.05em] text-[59px] ">
               SULFATES AND PARABENS
             </p>
           </div>
           <div>
-            <button className="flex items-center justify-center border-[1.1px] w-[140px] h-[23px] text-xs tracking-wide ml-[160px]">
+            <button className="flex items-center justify-center border-[1.45px] w-[167px] h-[29px] text-sm tracking-wide ml-[160px]">
               <Link
                 to="/shop"
                 className="py-2 px-4 flex items-center justify-center"
               >
-                shop now <HiArrowLongRight className="ml-1 text-xl" />
+                shop now <HiArrowLongRight className="ml-1 text-2xl" />
               </Link>
             </button>
           </div>
