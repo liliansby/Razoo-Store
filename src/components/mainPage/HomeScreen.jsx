@@ -3,6 +3,7 @@ import NavBar from "../NavBar";
 import { Link } from "react-router-dom";
 import bottleImg from "../../assets/mainPageProductImg.png";
 import { HiArrowLongRight } from "react-icons/hi2";
+import Bubble from "./Bubble";
 
 const HomeScreen = () => {
   return (
@@ -34,6 +35,9 @@ const HomeScreen = () => {
               </Link>
             </button>
           </div>
+        </div>
+        <div className="overflow-hidden absolute bottom-0 ">
+          <Bubble />
         </div>
       </div>
     </div>
