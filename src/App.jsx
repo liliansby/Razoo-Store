@@ -9,7 +9,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={"/Razoo-store/"}>
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/shop" element={<ShopPage />} />
