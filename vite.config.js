@@ -5,4 +5,5 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   base: "/Razoo-store/",
   plugins: [react()],
+  assetsInclude: ["**/*.png"],
 });
