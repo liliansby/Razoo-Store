@@ -23,7 +23,7 @@ const ProductScreen = () => {
     <div className="h-screen w-screen ">
       <div className="h-1/3 w-full bg-earthyOlive flex flex-col items-center justify-evenly text-white text-2xl">
         <div className=" tracking-wider">ORGANIC FROM THE START</div>
-        <div className="flex w-[80%] justify-evenly h-2/5 text-base tracking-wide">
+        <div className="flex w-[77%] justify-evenly h-2/5 text-base tracking-wide">
           <div className="flex flex-col items-center justify-between">
             <img src={bioImg} className="h-3/5" />
             <p>recycled materials</p>
