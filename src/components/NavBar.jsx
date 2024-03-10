@@ -20,7 +20,7 @@ const NavBar = ({ isWhite }) => {
         </div>
       </div>
       <div>
-        <ul className="flex space-x-6 justify-self-center tracking-wide text-xl">
+        <ul className="flex space-x-6 justify-self-center tracking-wide text-xl font-[300]">
           <li className="cursor-pointer hover:underline underline-offset-[3px]">
             <Link to="/">HOME</Link>
           </li>
@@ -36,7 +36,7 @@ const NavBar = ({ isWhite }) => {
         </ul>
       </div>
       <div className=" w-1/5">
-        <ul className="flex justify-end space-x-6 tracking-wide text-xl">
+        <ul className="flex justify-end space-x-6 tracking-wide text-xl font-[300]">
           <li className="mt-[2px] text-2xl pr-[11px]">
             <button>
               <CgSearch />
