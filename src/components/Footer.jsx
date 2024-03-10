@@ -24,20 +24,22 @@ const Footer = () => {
               <img src={logoWhite} alt="razoo logo" className="w-[160px]" />
             </Link>
           </div>
-          <ul className="space-y-1 flex flex-col">
-            <li className="cursor-pointer hover:underline underline-offset-[3px] py-[3px] w-fit">
-              <Link to="/">HOME</Link>
-            </li>
-            <li className="cursor-pointer hover:underline underline-offset-[3px] py-[3px]">
-              SHOP
-            </li>
-            <li className="cursor-pointer hover:underline underline-offset-[3px] py-[3px]">
-              ABOUT US
-            </li>
-            <li className="cursor-pointer hover:underline underline-offset-[3px] py-[3px]">
-              CONTACT
-            </li>
-          </ul>
+          <div>
+            <ul className="space-y-1 flex flex-col">
+              <li className="cursor-pointer hover:underline underline-offset-[3px] py-[3px] w-fit">
+                <Link to="/">HOME</Link>
+              </li>
+              <li className="cursor-pointer hover:underline underline-offset-[3px] py-[3px]">
+                <Link to="/shop">SHOP</Link>
+              </li>
+              <li className="cursor-pointer hover:underline underline-offset-[3px] py-[3px]">
+                <Link to="/about">ABOUT US</Link>
+              </li>
+              <li className="cursor-pointer hover:underline underline-offset-[3px] py-[3px]">
+                <Link to="/contact">CONTACT</Link>
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="w-2/4 flex flex-col items-center justify-between mb-[-50px]">
           <form

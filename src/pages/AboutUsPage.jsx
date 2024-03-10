@@ -16,7 +16,7 @@ const AboutUsPage = () => {
                 STARTED...
               </p>
             </div>
-            <div className="text-[12px] w-full mb-16">
+            <div className="text-[17px] mb-16">
               <p className="mb-3">
                 Razoo was born from a personal quest for healthier living.
               </p>
