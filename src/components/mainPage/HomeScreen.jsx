@@ -11,13 +11,13 @@ const HomeScreen = () => {
       <NavBar isWhite={true} />
       <div className="relative text-5xl h-full w-full flex justify-center items-center text-center flex-col overflow-hidden">
         <img
-          className="absolute rotate-10 top-[20%] mb-2 w-[500px]"
+          className="absolute rotate-10 top-[14%] mb-2 w-[500px]"
           src={bottleImg}
           alt="picture of shampoo bottle"
         />
         <div className="absolute top-[15%] flex flex-col items-end">
           <div>
-            <p className="font-poppins font-[200] text-xl mb-2 tracking-[0.05em]">
+            <p className="font-poppins font-[200] text-xl mb-1 tracking-[0.05em]">
               100% organic
             </p>
             <p className="font-garamond text-[78px] mb-1">WITHOUT</p>
