@@ -51,7 +51,7 @@ const ProductScreen = () => {
         </button>
 
         <div className="w-[85%] h-full  flex flex-col justify-center items-start">
-          <p className="text-white">//bestellers</p>
+          <p className="text-white text-lg">//bestellers</p>
 
           <div
             className="w-full overflow-scroll scroll-smooth "
@@ -67,6 +67,7 @@ const ProductScreen = () => {
                     key={product.id}
                     name={product.name}
                     id={product.id}
+                    price={product.price}
                   />
                 );
               })}

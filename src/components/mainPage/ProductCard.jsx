@@ -16,7 +16,7 @@ import A13 from "../../assets/productImages/13.png";
 import A14 from "../../assets/productImages/14.png";
 import A15 from "../../assets/productImages/15.png";
 
-const ProductCard = ({ name, id }) => {
+const ProductCard = ({ name, id, price }) => {
   const imageMap = {
     0: A0,
     1: A1,
@@ -39,9 +39,10 @@ const ProductCard = ({ name, id }) => {
   const imagePath = imageMap[id];
 
   return (
-    <div className=" w-[300px] flex flex-col items-center justify-center bg-veryLightGreen text-xs pb-2">
-      <img src={imagePath} className="py-2" />
-      <p>€ {name}</p>
+    <div className=" w-[300px] flex flex-col items-center justify-center bg-veryLightGreen text-sm pb-4 ">
+      <img src={imagePath} className="py-4" />
+      <p className="pt-2"> {name}</p>
+      <p>{price} $</p>
     </div>
   );
 };

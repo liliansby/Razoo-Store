@@ -28,7 +28,7 @@ const ReviewsScreen = () => {
         <SlArrowLeft className="text-2xl text-slateShadow" />
       </button>
       <div className="w-[85%] h-full  flex flex-col justify-center items-start">
-        <p className="text-white">//reviews</p>
+        <p className="text-white text-lg">//reviews</p>
         <div
           className="w-full overflow-scroll scroll-smooth "
           id="scrollableReviews"
