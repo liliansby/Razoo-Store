@@ -10,7 +10,7 @@ const AboutUsPage = () => {
         <NavBar isWhite={true} />
         <div className="h-full w-1/2 flex justify-start items-center flex-col">
           <div className="w-[70%] flex flex-col items-center my-[14%]">
-            <div className="mb-6 text-[55px] w-[320px] h-fit">
+            <div className="mb-2 text-[55px] w-[330px] h-fit">
               <p className="font-garamond text-start">HOW IT</p>
               <p className="font-sulfates tracking-wide text-end mt-[-32px]">
                 STARTED...
