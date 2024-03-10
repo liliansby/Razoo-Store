@@ -13,7 +13,7 @@ const NavBar = ({ isWhite }) => {
       } pb-0  w-[82%] min-h-[80px] mx-auto`}
     >
       <div className="w-1/5">
-        <div className="w-[64%]">
+        <div className="w-[148px]">
           <Link to="/">
             <img src={isWhite === true ? logoWhite : logo} alt="razoo logo" />
           </Link>
