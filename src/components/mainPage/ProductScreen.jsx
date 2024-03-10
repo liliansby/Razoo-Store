@@ -5,12 +5,15 @@ import crueltyFreeImg from "../../assets/characteristicImages/cruelty-free.png";
 import noChemicalImg from "../../assets/characteristicImages/noChemical.png";
 import sustainableImg from "../../assets/characteristicImages/sustainable.png";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
+import db from "../../../public/db.json";
 
 const ProductScreen = () => {
   const scrollToLeft = () => {
     const div = document.getElementById("scrollableProducts");
     div.scrollLeft = div.scrollLeft - 400;
   };
+
+  console.log(db);
 
   const scrollToRight = () => {
     const div = document.getElementById("scrollableProducts");
@@ -58,16 +61,15 @@ const ProductScreen = () => {
               className="flex w-fit
              justify-center items-center space-x-2 "
             >
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
+              {db.products.map((product) => {
+                return (
+                  <ProductCard
+                    key={product.id}
+                    name={product.name}
+                    id={product.id}
+                  />
+                );
+              })}
             </div>
           </div>
         </div>

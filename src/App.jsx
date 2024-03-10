@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import MainPage from "./pages/MainPage";
 import ShopPage from "./pages/ShopPage";
 import CartPage from "./pages/CartPage";
@@ -9,7 +9,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 
 const App = () => {
   return (
-    <BrowserRouter basename={"/Razoo-store/"}>
+    <HashRouter basename={"/Razoo-store/"}>
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/shop" element={<ShopPage />} />
@@ -19,7 +19,7 @@ const App = () => {
         <Route path="/login" element={<LoginPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 export default App;
