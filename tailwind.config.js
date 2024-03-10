@@ -5,7 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         mainPageBg: "url('./assets/mainPageBg.png')",
-        contactPageBg: "url('./assets/contactpagebg1.png')",
+        contactPageBg: "url('./assets/contactpagebg.png')",
       },
       colors: {
         bgColor: "#e9e7e2",
