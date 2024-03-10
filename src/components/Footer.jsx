@@ -17,7 +17,7 @@ const Footer = () => {
 
   return (
     <div className="bg-slateShadow ">
-      <div className="py-[93px] flex justify-center tracking-widest text-sm text-white">
+      <div className="py-[93px] flex justify-center tracking-widest text-base text-white">
         <div className="">
           <div className="mb-5 ml-[-10px] mt-[-17px]">
             <Link to="/">
@@ -46,11 +46,11 @@ const Footer = () => {
             className="flex flex-col items-center"
             onSubmit={(event) => formSubmit(event)}
           >
-            <p className="font-[400] pb-3" htmlFor="">
+            <p className="font-[400] text-lg pb-3" htmlFor="">
               SUBSCRIBE TO OUR NEWSLETTER
             </p>
             <input
-              className="text-xs bg-slateShadow border-[1px] h-7 w-72 pl-3 placeholder-white"
+              className="text-sm bg-slateShadow border-[1px] h-8 w-72 pl-3 placeholder-white"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -58,7 +58,7 @@ const Footer = () => {
               required
             />
             <button
-              className=" font-[300] bg-earthyOlive px-8 py-[5px] mt-3 mb-3 text-xs tracking-wide"
+              className=" font-[300] bg-earthyOlive px-8 py-[5px] mt-3 mb-3 text-base tracking-wide"
               type="submit"
             >
               SUBMIT
@@ -71,7 +71,7 @@ const Footer = () => {
                 required
               />
               <label
-                className="font-[200] text-[12px] text-xs"
+                className="font-[200] text-[12px] text-sm"
                 htmlFor="accept-terms"
               >
                 I accept the terms & conditions of this subscription
@@ -81,25 +81,25 @@ const Footer = () => {
           <p className="font-[200] text-xs">copyright © 2024 Razoo.com</p>
         </div>
         <div>
-          <div className="font-[400] pb-4">CONTACT</div>
+          <div className="font-[400] pb-4 text-lg">CONTACT</div>
           <div className="space-y-1">
-            <p className="cursor-pointer hover:underline underline-offset-[3px] py-[1px] font-[200] text-xs pb-2">
+            <p className="cursor-pointer hover:underline underline-offset-[3px] py-[1px] font-[200] text-base pb-2">
               +358 488 382709
             </p>
-            <p className="cursor-pointer hover:underline underline-offset-[3px] py-[1px] font-[200] text-xs pb-2">
+            <p className="cursor-pointer hover:underline underline-offset-[3px] py-[1px] font-[200] text-base  pb-2">
               razoo@gmail.com
             </p>
-            <p className="py-[1px] font-[200] text-xs pb-4">FOLLOW US</p>
+            <p className="py-[1px] font-[200] text-base  pb-4">FOLLOW US</p>
           </div>
           <ul className="flex items-start space-x-3">
             <li>
-              <SlSocialFacebook className="text-white text-sm " />
+              <SlSocialFacebook className="text-white text-base  " />
             </li>
             <li>
-              <SlSocialTwitter className="text-white text-sm " />
+              <SlSocialTwitter className="text-white text-base  " />
             </li>
             <li>
-              <SlSocialInstagram className="text-white text-sm " />
+              <SlSocialInstagram className="text-white text-base  " />
             </li>
           </ul>
         </div>
